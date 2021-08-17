@@ -1,0 +1,213 @@
+.mainContainer{
+    display: flex;
+}
+.TabOneContainer{
+   width: 50vw;
+   height: 100vh;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.5s ease;
+   transition-delay: 0.05s;
+}
+.TabTwoContainer{
+    width: 50vw;
+    min-width: 30vw;
+    height: 100vh;
+    background-color: #5b54fa;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+.expandedTabOneContainer{
+    width: 160vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    transition-delay: 0.05s;
+    padding-right: 250px;
+}
+.expandedTabTwoContainer{
+    width: 160vw;
+    height: 100vh;
+    background-color: #5b54fa;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+.overlayDiv{
+    position: absolute;
+    background-color: white;
+    width: 50vw;
+   height: 100vh;
+   z-index: 100;
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   opacity: 1;
+   transition: all 0.5s ease;
+}
+.hiddenOverlayDiv{
+    opacity: 0;
+    z-index: -5;
+    transition: all 0.5s ease;
+    position: absolute;
+    background-color: rgba(65,104,247,0.75);
+    width: 50vw;
+   height: 100vh;
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+}
+.overlayDivTabTwo{
+position: absolute; 
+background-color: #5b54fa;
+top: 0px;
+min-width: none;
+width: 50vw;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+opacity: 1;
+}
+.hiddenOverlayDivTabTwo{
+    position: absolute; 
+    background-color: #5b54fa;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0;
+    z-index: -5;
+}
+.tabOneTitle{
+font-family: 'Georama', sans-serif;
+color: black;
+font-size: 45px;
+position: absolute;
+display: flex;
+top: 38%;
+z-index: 999;
+transition: all ease-out 0.5s;
+}
+.expandedTabOneTitle{
+    font-family: 'Georama', sans-serif;
+    font-size: 55px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-left: -40px;
+    transform: translateY(-400px);
+    transition: all ease-out 0.5s;
+}
+.tabOneText{
+    margin-left: 10px;
+    letter-spacing: 2px;
+    color: #5b54fa;
+}
+.addText{
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: white;
+}
+.expandedTabOneText{
+    margin-left: 10px;
+    letter-spacing: 2px;  
+    color: #5b54fa;
+    text-align: center;
+}
+.illustrationSVG{
+    z-index:1111;
+    position: absolute;
+    top: -70px;
+    left: 97%;
+    width: 45px;
+    max-width: 100vw;
+    height: 100px;
+    transform: translate(-40%,50%);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.overlayCenterDiv{
+    position: absolute;
+    height: 100vh;
+    width: 60px;
+    background-color: red;
+    z-index: 11111;
+    left: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.translatedXoverlayCenterDiv{
+    position: absolute;
+    height: 100vh;
+    width: 60px;
+    background-color: red;
+    z-index: 11111;
+    left: 64%;
+    transition: all 0.5s ease-in-out;
+}
+#svgColor{
+    fill: #242B2E;
+    transition: all 0.5s;
+}
+.illustrationSVG:hover #svgColor{
+   fill: black;
+   transition: all 0.5s;
+}
+.sessionExpiredModal{
+    width: 425px;
+    height: 200px;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    z-index: 11111;
+    transform: translate(-50%,-50%);
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1) translate(-50%,-50%);
+opacity: 1;
+border: 2px solid red;
+border-bottom: 5px solid red;
+transition: all 0.5s;
+}
+.hiddenSessionExpiredModal{
+    width: 325px;
+    height: 100px;
+    position: absolute;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    z-index: 500;
+    transform: translate(-50%,-50%) ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1) translateX(-300%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.disabledMainContainer{
+    display: flex;
+    cursor: not-allowed;
+}
+.ReLoginText{
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+}
+.ReLoginText:hover{
+    color: green;
+    transform-origin: left;
+}

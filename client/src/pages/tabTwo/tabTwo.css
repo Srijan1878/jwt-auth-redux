@@ -1,0 +1,18 @@
+.tableContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    margin-left: 30px;
+    margin-top: 10px;
+    align-items: center;
+    padding-left: 50px;
+    color: white;
+}
+.heading{
+    text-align: center;
+    opacity: 1;
+    margin: 0px;
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
